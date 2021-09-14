@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Form Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="forHeader" style="padding:10px">
+            <h1 class="forHeading">TO THE NEW</h1>
+            
+            <nav class="nav" style="float: right; padding:0px">
+				<a href="#home" class="nav-link nav-text" rel="noopener noreferrer"
+					>Home</a
+				>
+
+				<a href="#help" class="nav-link nav-text" rel="noopener noreferrer"
+					>Quick Help</a
+				>
+			</nav>
+
+        </header> 
+
+        <hr class="divider" />
+
+        <main id="#forMain">
+            <div class="formContainer">
+                <h3 class="forHeading">Bug Report</h3>
+                <form class="formData">
+                    <div class="fieldContainer">
+						<label for="title">Title:*</label>
+						<input type="text" id="title" name="title" required />
+					</div>
+
+                    <div class="fieldContainer">
+						<label for="description">Description:*</label>
+						<textarea name="description" id="description" required></textarea>
+					</div>
+                    
+                    <div class="fieldContainer">
+						<label for="operating-system">Operating System:</label>
+						<select name="operating system" id="operating-system">
+							<option value="Windows XP">Windows XP</option>
+							<option value="Ubuntu">Ubuntu</option>
+							<option value="MacOS">MacOS</option>
+						</select>
+					</div>
+
+                    <div class="fieldContainer">
+						<label for="product">Product:*</label>
+						<select name="product" id="product">
+							<option value="Formoid">Formoid</option>
+							<option value="Xyz">Xyz</option>
+							<option value="abc">abc</option>
+						</select>
+					</div>
+
+                    <div class="fieldContainer">
+						<label for="version">Version:*</label>
+						<input type="text" id="version" name="version" required />
+					</div>
+
+
+                    <div class="radioBtn">
+						<p class="radioBtnHeading">License:*</p>
+
+						<div class="group-row">
+							<div class="fieldContainer">
+								<label for="license-free">Free</label>
+								<input
+									type="radio"
+									name="license"
+									value="Free"
+									id="license-free"
+									required
+								/>
+							</div>
+
+							<div class="fieldContainer">
+								<label for="license-business">Business</label>
+								<input
+									type="radio"
+									name="license"
+									value="Business"
+									id="license-Business"
+									required
+								/>
+							</div>
+						</div>
+					</div>
+
+
+                    <div class="fieldContainer">
+						<label for="severity">Severity:</label>
+						<select name="severity" id="severity">
+							<option value="Formoid">Critical</option>
+							<option value="Xyz">Moderate</option>
+							<option value="abc">Low</option>
+						</select>
+					</div>
+
+                    <div class="fieldContainer">
+						<label for="attachments">Attachments</label>
+						<input type="file" id="attachments" name="attachments" />
+					</div>
+
+                    <div class="footer">
+						<input type="submit" class="submit-btn" value="Send" />
+					</div>
+
+
+
+
+
+
+                </form>
+            </div>
+        </main>
+
+    </body>
+</html>

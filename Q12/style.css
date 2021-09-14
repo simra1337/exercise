@@ -1,0 +1,236 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	font-family: sans-serif;
+}
+
+
+body {
+	padding-bottom: 3rem;
+}
+
+:root {
+	--primary-color: #2cd3a7;
+	--text-blue: #33a2cc;
+	--text-gray: #8c8c8c;
+	--bg-light: #e4e4e4;
+	--bg-dark: #b2b2b2;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+#foHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 4rem 0;
+}
+
+#forHeader .forHeading {
+	font-weight: 400;
+}
+
+#forHeader .forHeading,
+#forHeader .nav-text {
+	color: var(--text-blue);
+}
+
+#forHeader .nav {
+	display: flex;
+	align-items: center;
+}
+
+#forHeader .nav .nav-link:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.divider {
+	background-color: var(--bg-light);
+	opacity: 0.3;
+	margin: 1.5rem 0 1rem;
+}
+
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0 auto;
+	width: 400px;
+
+	border: 1px solid var(--bg-dark);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.formContainer .forHeading {
+	padding: 1.25rem 0 1.25rem 1rem;
+	background-color: var(--bg-dark);
+	color: white;
+}
+
+
+
+
+.formContainer .formData {
+	padding-top: 0.75rem;
+}
+
+.formContainer .fieldContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.fieldContainer,
+.radioBtn {
+	margin: 0 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.fieldContainer label {
+	color: var(--text-gray);
+	margin-bottom: 0.25rem;
+}
+
+.fieldContainer input,
+.fieldContainer textarea,
+.fieldContainer select {
+	width: 100%;
+	outline: none;
+	padding: 0.25rem 0.5rem;
+	border-width: 1px;
+	border-color: var(--bg-dark);
+	border-radius: 4px;
+}
+
+.fieldContainer input[name='version'] {
+	width: 30%;
+}
+
+.fieldContainer textarea {
+	min-height: 60px;
+	max-height: 80px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.fieldContainer select {
+	color: white;
+	background-color: var(--primary-color);
+	border: none;
+}
+
+.formData .radioBtn .group-row {
+	display: flex;
+}
+
+.formData .radioBtn .group-row:not(:last-child) {
+	margin-bottom: 0.25rem;
+}
+
+.formData .radioBtn .radioBtnHeading {
+	color: var(--text-gray);
+	margin-bottom: 0.25rem;
+}
+
+.formData .radioBtn .fieldContainer {
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	margin: unset;
+	flex-grow: 1;
+}
+
+.formData .radioBtn .fieldContainer label {
+	margin-left: 8px;
+	margin-bottom: unset;
+}
+
+.formData .radioBtn .fieldContainer input {
+	width: 13px;
+}
+
+.formContainer .footer {
+	background-color: var(--bg-light);
+	padding: 1rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.formContainer .footer .submit-btn {
+	background-color: var(--primary-color);
+	border: none;
+	outline: none;
+	padding: 0.5rem 1.5rem;
+	border-radius: 8px;
+	color: white;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.formContainer .fieldContainer input[type='file'] {
+	width: 100%;
+	border: 1px solid var(--bg-dark);
+	border-radius: 4px;
+	padding: 0.25rem 0.5rem;
+
+	position: relative;
+
+	cursor: pointer;
+
+	color: var(--text-gray);
+
+	padding-right: 110px;
+}
+
+.formContainer
+	.fieldContainer
+	input[type='file']::-webkit-file-upload-button {
+	background-color: var(--bg-dark);
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	margin: unset;
+
+	height: 100%;
+
+	border: none;
+	outline: none;
+
+	color: white;
+
+	cursor: pointer;
+
+	width: 100px;
+}
+
+.formContainer .fieldContainer input[type='file']::file-selector-button {
+	background-color: var(--bg-dark);
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	margin: unset;
+
+	height: 100%;
+
+	border: none;
+	outline: none;
+
+	color: white;
+
+	cursor: pointer;
+
+	width: 100px;
+}
+
